@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <style>
+    #custom-handle {
+      width: 3em;
+      height: 1.6em;
+      top: 50%;
+      margin-top: -.8em;
+      text-align: center;
+      line-height: 1.6em;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+        $( "#slider-range-max" ).slider({
+          range: "max",
+          min: 1,
+          max: 10,
+          value: 8,
+          slide: function( event, ui ) {
+            $( "#amount" ).val( ui.value );
+          }
+        });
+        $( "#amount" ).val( $( "#slider-range-max" ).slider( "value" ) );
+      } );
+      </script>
+      
+      <script>
+        $( function() {
+            $( "#slider-range-max1" ).slider({
+              range: "max",
+              min: 1,
+              max: 10,
+              value: 8,
+              slide: function( event, ui ) {
+                $( "#amount1" ).val( ui.value );
+              }
+            });
+            $( "#amount1" ).val( $( "#slider-range-max1" ).slider( "value" ) );
+          } );
+          </script>      
+      <script>
+        $( function() {
+            $( "#slider-range-max2" ).slider({
+              range: "max",
+              min: 1,
+              max: 10,
+              value: 8,
+              slide: function( event, ui ) {
+                $( "#amount2" ).val( ui.value );
+              }
+            });
+            $( "#amount2" ).val( $( "#slider-range-max2" ).slider( "value" ) );
+          } );
+          </script>      
+      <script>
+        $( function() {
+            $( "#slider-range-max3" ).slider({
+              range: "max",
+              min: 1,
+              max: 10,
+              value: 7,
+              slide: function( event, ui ) {
+                $( "#amount3" ).val( ui.value );
+              }
+            });
+            $( "#amount3" ).val( $( "#slider-range-max3" ).slider( "value" ) );
+          } );
+          </script>      
+      <script>
+        $( function() {
+            $( "#slider-range-max4" ).slider({
+              range: "max",
+              min: 1,
+              max: 10,
+              value: 7,
+              slide: function( event, ui ) {
+                $( "#amount4" ).val( ui.value );
+              }
+            });
+            $( "#amount4" ).val( $( "#slider-range-max4" ).slider( "value" ) );
+          } );
+          </script>      
+      <script>
+        $( function() {
+            $( "#slider-range-max5" ).slider({
+              range: "max",
+              min: 1,
+              max: 10,
+              value: 7,
+              slide: function( event, ui ) {
+                $( "#amount5" ).val( ui.value );
+              }
+            });
+            $( "#amount5" ).val( $( "#slider-range-max5" ).slider( "value" ) );
+          } );
+          </script>      
+      <script>
+        $( function() {
+            $( "#slider-range-max6" ).slider({
+              range: "max",
+              min: 1,
+              max: 10,
+              value: 8,
+              slide: function( event, ui ) {
+                $( "#amount6" ).val( ui.value );
+              }
+            });
+            $( "#amount6" ).val( $( "#slider-range-max6" ).slider( "value" ) );
+          } );
+          </script>      
+      <script>
+        $( function() {
+            $( "#slider-range-max7" ).slider({
+              range: "max",
+              min: 1,
+              max: 10,
+              value: 8,
+              slide: function( event, ui ) {
+                $( "#amount7" ).val( ui.value );
+              }
+            });
+            $( "#amount7" ).val( $( "#slider-range-max7" ).slider( "value" ) );
+          } );
+          </script>
+</head>
+<body>
+     <h3>Гарри Поттер и философский камень</h3>
+     <img src="https://upload.wikimedia.org/wikipedia/ru/b/b4/Harry_Potter_and_the_Philosopher%27s_Stone_%E2%80%94_movie.jpg" width="300" height="400" alt="">
+    <label for="amount">Рейтинг:</label>
+    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+  </p>
+  <div id="slider-range-max"></div>
+
+  <h3>Гарри Поттер и Тайная комната</h3>
+  <img src="https://upload.wikimedia.org/wikipedia/ru/0/0b/Harry_Potter_and_the_Chamber_of_Secrets_%E2%80%94_movie.jpg" width="300" height="400" alt="">
+  <label for="amount1">Рейтинг:</label>
+  <input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+<div id="slider-range-max1"></div>
+
+<h3>Гарри Поттер и узник Азкабана</h3>
+<img src="https://upload.wikimedia.org/wikipedia/ru/b/b2/Harry_Potter_and_the_Prisoner_of_Azkaban_%E2%80%94_movie.jpg" width="300" height="400" alt="">
+<label for="amount2">Рейтинг:</label>
+<input type="text" id="amount2" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+<div id="slider-range-max2"></div>
+
+<h3>Гарри Поттер и Кубок огня</h3>
+<img src="https://upload.wikimedia.org/wikipedia/ru/6/60/Harry_Potter_and_the_Order_of_the_Phoenix_%E2%80%94_movie.jpg" width="300" height="400" alt="">
+<label for="amount3">Рейтинг:</label>
+<input type="text" id="amount3" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+<div id="slider-range-max3"></div>
+
+<h3>Гарри Поттер и Орден Феникса</h3>
+<img src="https://upload.wikimedia.org/wikipedia/ru/8/82/Harry_Potter_and_the_Half-Blood_Prince_%E2%80%94_movie.jpg" width="300" height="400" alt="">
+<label for="amount4">Рейтинг:</label>
+<input type="text" id="amount4" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+<div id="slider-range-max4"></div>
+
+<h3>Гарри Поттер и Принц-полукровка</h3>
+<img src="https://upload.wikimedia.org/wikipedia/ru/b/b4/Harry_Potter_and_the_Philosopher%27s_Stone_%E2%80%94_movie.jpg" width="300" height="400" alt="">
+<label for="amount5">Рейтинг:</label>
+<input type="text" id="amount5" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+<div id="slider-range-max5"></div>
+
+<h3>Гарри Поттер и Дары Смерти: Часть I</h3>
+<img src="https://upload.wikimedia.org/wikipedia/ru/9/98/Harry_Potter_and_the_Deathly_Hallows._Part_1_%E2%80%94_movie.jpg" width="300" height="400" alt="">
+<label for="amount6">Рейтинг:</label>
+<input type="text" id="amount6" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+<div id="slider-range-max6"></div>
+
+<h3>Гарри Поттер и Дары Смерти: Часть II</h3>
+<img src="https://upload.wikimedia.org/wikipedia/ru/f/f4/Harry_Potter_and_the_Deathly_Hallows._Part_2_%E2%80%94_movie.jpg" width="300" height="400" alt="">
+<label for="amount7">Рейтинг:</label>
+<input type="text" id="amount7" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+<div id="slider-range-max7"></div>
+
+    
+</body>
+</html>
